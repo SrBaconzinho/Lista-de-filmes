@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #344e41;
+  --light-primary: #3a5a40;
+  --lighthest-color: #dad7cd;
+  --secondary-color: #588157;
+  --light-secondary: #a3b18a;
+}
+
+#modal-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  visibility: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+#modal-background {
+  background-color: var(--light-primary);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+#modal-container {
+  z-index: 1;
+  background-color: var(--lighthest-color);
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+#modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+#movie-info {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 300px;
+}
+
+#movie-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#movie-poster {
+  border-radius: 15px;
+}
+
+#add-to-list {
+  font-weight: bolder;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: 3px solid var(--light-primary);
+  padding: 1rem 0;
+  width: 100%;
+  box-shadow: 2px 2px 10px black;
+}
+
+#add-to-list:focus,
+#add-to-list:hover {
+  background-color: var(--secondary-color);
+  color: var(--lighthest-color);
+}

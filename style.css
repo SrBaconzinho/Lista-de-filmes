@@ -1,0 +1,138 @@
+:root {
+  --primary-color: #344e41;
+  --light-primary: #3a5a40;
+  --lighthest-color: #dad7cd;
+  --secondary-color: #588157;
+  --light-secondary: #a3b18a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.bi {
+  display: inline;
+  margin: 0 1rem;
+  justify-content: space-between;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header #search-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.entrys {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.input-name {
+  height: 50%;
+  display: contents;
+  width: 80%;
+  justify-content: space-between;
+}
+#movie-name {
+  border-radius: 0.5rem;
+  display: flex;
+  height: 1.5rem;
+  font-size: 1.4rem;
+  width: 90%;
+  padding: 0.1rem 0.1rem;
+  font-weight: bold;
+}
+label {
+  font-size: 1.3rem;
+  margin: 0 1rem;
+  align-items: center;
+}
+
+#button-buscar:hover {
+  border: solid 1px var(--secondary-color);
+}
+
+#button-buscar {
+  margin-right: 2rem;
+  margin-left: 0.8rem;
+  border-radius: 0.8rem;
+  height: 1.6rem;
+  all: unset;
+}
+
+.input-year {
+  display: inline-flex;
+  height: 100%;
+  width: 45%;
+}
+
+#movie-year {
+  min-width: 5rem;
+  margin-right: 2rem;
+  margin-left: 0.8rem;
+  display: flex;
+  width: 100%;
+  height: 1.5rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.1rem;
+  font-weight: bold;
+}
+
+main {
+  background-color: var(--lighthest-color);
+  text-align: center;
+  padding: 2rem;
+  flex-grow: 1;
+}
+
+#movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#movie-list article {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#button-remover {
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: 3px solid red;
+  padding: 1rem 0;
+  box-shadow: 2px 2px 10px black;
+}
+#button-remover:hover {
+  background-color: red;
+  color: black;
+}
+
+#movie-list article > img {
+  border-radius: 10px;
+}
